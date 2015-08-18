@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<img src="images/icon_01.png">
+
+<p></p>
+
+<div>
+    <button id="previous">上一张</button>
+    <button id="next">下一张</button>
+</div>
+
+<script type="text/javascript">
+    function fn() {
+        alert(1);
+    }
+
+    var minIndex = 1;
+    var maxIndex = 9;
+
+    // 图片索引
+    var index = minIndex;
+
+    // 上一张按钮
+    var previous = document.getElementById('previous');
+//    previous.onclick = fn;
+    previous.onclick = function() {
+        // 操作索引
+        if (index == minIndex) {
+            index = maxIndex;
+        } else {
+            index--;
+        }
+
+        // 根据索引显示对应的图片
+        var img = document.getElementsByTagName('img')[0];
+        img.src = 'images/icon_0' + index + '.png';
+    };
+
+    // 下一张按钮
+    var next = document.getElementById('next');
+    next.onclick = function() {
+        // 操作索引
+        if (index == maxIndex) {
+            index = minIndex;
+        } else {
+            index++;
+        }
+
+        // 根据索引显示对应的图片
+        var img = document.getElementsByTagName('img')[0];
+        img.src = 'images/icon_0' + index + '.png';
+    };
+
+</script>
+</body>
+</html>

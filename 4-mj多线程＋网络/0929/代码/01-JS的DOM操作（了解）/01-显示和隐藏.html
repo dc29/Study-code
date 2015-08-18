@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        // 显示
+        function show() {
+            // 获取p节点（p元素）
+            var p = document.getElementById('content');
+
+            // 设置style
+//            p.style = 'display:block;';
+            p.style.display = 'block';
+        }
+
+        // 隐藏
+        function hide() {
+            // 获取p节点（p元素）
+            var p = document.getElementById('content');
+
+            // 设置style
+//            p.style = 'display:none;';
+            p.style.display = 'none';
+        }
+
+        // 查看对象里面的所有属性
+        function find(o) {
+            for (var name in o) {
+                console.log(name + ' - ' + o[name]);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!--<button onclick="var age = 20; alert(age);">显示</button>-->
+
+<button onclick="show();">显示</button>
+<button onclick="hide();">隐藏</button>
+
+<p id="content">462369469723697496236946462369469723697496236946462369469723697496236946</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="
+    UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div>
+    <p>123</p>
+    <span>456</span>
+    <div class="test">
+        <img src="images/icon_01.png">
+    </div>
+    <div>
+        <img src="images/icon_01.png">
+    </div>
+    <div class="test">
+        <img src="images/icon_01.png">
+    </div>
+    <div class="test">
+        <img src="images/icon_01.png">
+    </div>
+    <div>
+        <img src="images/icon_01.png">
+    </div>
+    <div>
+        <img id="first" src="images/icon_01.png">
+    </div>
+</div>
+
+<button>测试</button>
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript">
+//    var img = $('img');
+//    alert(img.attr('src'));
+
+//    $('img').attr('src', 'images/icon_02.png');
+//
+//    $('img').click(function() {
+//        alert('点击了图片');
+//    });
+
+//    $('.test img').attr('src', 'images/icon_02.png');
+//
+//    $('#first').attr('src', 'images/icon_09.png');
+
+      $('img').hide();
+
+        $('button').click(function() {
+//            $('img').hide();
+//            $('img').toggle(2000);
+            $('img').slideDown();
+        });
+</script>
+</body>
+</html>

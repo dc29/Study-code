@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: 100% 750px;
+}
+
+.content {
+    /*background-color: red;*/
+    width: 700px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin: 50px auto 0px;
+}
+
+.content .logo {
+    text-align: center;
+}
+
+.content .logo img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .nav ul {
+    list-style: none; /* 去除左边的圆点 */
+    text-align: center;
+ }
+
+.content .nav ul li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content .nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+.content .nav ul li a.active {
+    text-decoration: none; /* 去除文字底部的下划线 */
+}
+
+.content .search {
+    text-align: center;
+}
+
+.content .search input {
+    width: 500px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 0px;
+}
+
+.content .search button {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 0px solid #ddd;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 非块级元素水平居中：设置父标签的text-align: center; */
+/* 块级元素水平居中：设置自己的margin: 0px auto;*/

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        /* 标签选择器
+        p {
+            color: red;
+        }
+
+        div {
+            color: red;
+        }*/
+
+        /* 类选择器
+        .first {
+            color: red;
+        }
+
+        .second {
+            background-color: blue;
+        }*/
+
+        /* id选择器
+        #first {
+            color: red;
+        }
+        #second {
+            color: blue;
+        }*/
+
+        /* 群组选择器
+        .first , #second , h1 {
+            color: red;
+        }*/
+
+        /* 选择器组合
+        div.first {
+            color: red;
+        }*/
+
+        /* 后代选择器
+        div p , span p {
+            color: red;
+        }*/
+
+        /* 子标签选择器(直接子标签)
+        div > p , span > p {
+            color: red;
+        }*/
+
+        /*
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        */
+
+        /* 伪类
+        div:hover {
+            background-color: blue;
+        }*/
+
+        /* 伪元素
+        div:before {
+            content: "哈哈哈哈";
+        }
+
+        div:after {
+            content: "呵呵呵呵";
+        }
+
+        div:first-letter {
+            font-size: 30px;
+        }*/
+
+
+        /*  * {
+             color: yellow !important;
+         }   1000 */
+
+        /* div.first {
+            color: red;
+        } 11 */
+
+        /* .first {
+           color: blue;
+       } 10 */
+
+        /* .second {
+            color: black;
+        } 10 */
+
+        /* .first.second {
+           color: brown;
+       }  20 */
+
+        /*#second {*/
+            /*color: yellow;*/
+        /*}*/
+
+        /* 优先级：#second > .first > div */
+    </style>
+</head>
+<body>
+
+<!--
+<div class="first  second" style="color: green;">123456</div>
+    -->
+
+<div>
+    <p>p1</p>
+    <span>
+        <p>p2</p>
+        <span>
+            <p>p3</p>
+        </span>
+    </span>
+</div>
+
+<span>
+    <p>p4</p>
+</span>
+
+<!--
+<div>div1</div>
+<div class="first">div2</div>
+
+<p>p1</p>
+<p class="first">p2</p>
+
+<h1>hhh</h1>
+    -->
+
+<!--
+<div id="first">div1</div>
+<div id="second">div2</div>
+    -->
+
+<!--
+    <div class="first">div1</div>
+    <div class="second">div2</div>
+
+    <p class="first second">p1</p>
+    <p class="first">p2</p>
+    -->
+</body>
+</html>
